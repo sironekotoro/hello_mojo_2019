@@ -14,6 +14,7 @@ __DATA__
 % layout 'default';
 % title 'Welcome';
 <h1>Welcome to the Mojolicious real-time web framework!</h1>
+<%= $greeting %> <!-- この行を追加 -->
 
 @@ layouts/default.html.ep
 <!DOCTYPE html>
