@@ -3,6 +3,7 @@ use Mojolicious::Lite;
 
 get '/' => sub {
   my $c = shift;
+  $c->stash( greeting => 'Hello Mojo' );  # この行を追加
   $c->render(template => 'index');
 };
 
